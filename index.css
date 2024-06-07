@@ -1,0 +1,164 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #a6d284;
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    max-height: 30px;
+}
+
+/* Container de l'hôtel */
+.hotel-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.hotel-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(244, 108, 252, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hotel-info {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.reservation-btn {
+    background-color: #74bc44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reservation-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Video Container */
+.video-container {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-container h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(244, 108, 252, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: #945bfc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hotel-container {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .hotel-container {
+        background-image: none !important;
+    }
+
+    .hotel-description {
+        position: static;
+        transform: none;
+        padding: 15px;
+    }
+
+    .hotel-info {
+        position: static;
+        transform: none;
+        margin-top: 10px;
+    }
+
+    .reservation-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .video-container {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .video-container video {
+        display: none;
+    }
+
+    .video-container h2 {
+        position: static;
+        transform: none;
+        background-color: transparent;
+        color: #333;
+        text-shadow: none;
+        padding: 0;
+    }
+}
+footer img{
+    height: 200px;
+    width: 650px;
+    object-fit: cover;
+}
