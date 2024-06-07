@@ -1,0 +1,75 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #a6d284;
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    max-height: 30px;
+}/* Main content */
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #945bfc;
+    border-color: #945bfc;
+}
+
+.btn-primary:hover {
+    background-color: #7a3efd;
+    border-color: #7a3efd;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #945bfc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer img{
+    height: 200px;
+    width: 650px;
+    object-fit: cover;
+}
